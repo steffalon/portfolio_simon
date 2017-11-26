@@ -1,0 +1,128 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav ul img {
+    width: 20px;
+    height: 15px;
+}
+
+nav {
+    border-bottom: 1px solid #75aaff;
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgba(73, 78, 107, 0.2);
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #75aaff;
+    padding: 18px 15px;
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: lighter;
+}
+
+nav li a:hover {
+    color: #E7DFDD;
+    border-bottom: 1px solid #E7DFDD;
+}
+
+.active {
+    background-color: rgba(25, 34, 49, 0.9);
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    background-color: rgba(16, 25, 40, 1);
+}
+
+.support {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.note {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    clear: left;
+    background-color: rgba(73, 78, 107, 0.7);
+    padding: 1.1% 1.1%;
+    margin: 5% 25%;
+    box-sizing: border-box;
+    width: 50%;
+    border-style: solid;
+    border-color: #75aaff;
+    border-width: 1px 1px 1px 7px;
+    top: 35%;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.note .field {
+    background-color: rgba(73, 78, 107, 0.7);
+    color: white;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #75aaff;
+    border-width: 1px 1px 1px 3px;
+    width: 100%;
+    font-size: 1em;
+    padding-left: 1%;
+}
+
+.note .lbutton {
+    background-color: rgba(73, 78, 107, 0.7);
+    color: white;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #75aaff;
+    border-width: 1px;
+    width: 39.3%;
+    font-size: 0.9em;
+    padding: 1%;
+}
+
+.note .lbutton:hover, .field:hover {
+    border: 1px solid rgba(117, 170, 255, 0.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.userlist {
+    width: 100%;
+    text-align: left;
+    border-color: #75aaff;
+    background-color: rgba(73, 78, 107, 0.7);
+}
+
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    pointer-events: visibleFill;
+}

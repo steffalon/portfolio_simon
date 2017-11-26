@@ -1,0 +1,13 @@
+.noDecoration {
+    text-decoration: none;
+    color: black;
+}
+
+.noDecoration:hover {
+    text-decoration: none;
+    color: green;
+}
+
+body {
+    padding-top: 3em;
+}

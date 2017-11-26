@@ -1,0 +1,7 @@
+Options -Indexes
+order allow,deny
+
+<Files ~ "^.*">
+  Aloow from all
+</Files>
+

@@ -1,0 +1,226 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-attachment: scroll;
+    background-image: url(../img/background_gray.png);
+    background-clip: border-box;
+    background-repeat: repeat;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav ul img {
+  width: 18px;
+  height: 16px;
+}
+
+nav {
+    border-bottom: 1px solid rgb(96, 140, 185);
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgba(73, 78, 107, 0.2);
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #75aaff;
+    padding: 18px 15px;
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: lighter;
+}
+
+nav li a:hover {
+    color: #E7DFDD;
+    border-bottom: 1px solid #E7DFDD;
+}
+
+.active {
+    background-color: rgba(25, 34, 49, 0.9);
+    color: white;
+}
+
+.support {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.note {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    clear: left;
+    background-color: rgba(73, 78, 107, 0.7);
+    padding: 1.1% 1.1%;
+    margin: 5% 35%;
+    box-sizing: border-box;
+    width: 30%;
+    border-style: solid;
+    border-color: #75aaff;
+    border-width: 1px 1px 1px 7px;
+    top: 35%;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.note .field {
+    background-color: rgba(73, 78, 107, 0.7);
+    color: white;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #75aaff;
+    border-width: 1px 1px 1px 3px;
+    width: 80%;
+    font-size: 1em;
+    padding-left: 1%;
+}
+
+.note .lbutton {
+    background-color: rgba(73, 78, 107, 0.7);
+    color: white;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #75aaff;
+    border-width: 1px;
+    width: 39.3%;
+    font-size: 0.9em;
+    padding: 1%;
+    margin: 0;
+}
+
+.note .lbutton:hover, .field:hover {
+    border: 1px solid rgba(117, 170, 255, 0.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    background-color: rgba(73, 78, 107, 0.2);
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(96, 140, 185);
+    border-width: 0 1px 1px 1px;
+    z-index: 1;
+    color: white;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropbtn {
+    color: white;
+}
+
+.show {display:block;}
+
+.mobile-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    background-color: rgba(73, 78, 107, 0.2);
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(96, 140, 185);
+    border-width: 0 1px 1px 1px;
+    z-index: 1;
+    color: white;
+}
+
+.mobile-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mobile {
+    display: none;
+}
+
+.dshow {display:block;}
+
+textarea { resize: vertical; }
+
+@media screen and (max-width: 1000px) {
+  .note {
+    margin: 5% 25%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    nav li {
+        width: 100%;
+    }
+    nav {
+        position: relative;
+    }
+    .support {
+        display: none;
+    }
+    .note {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.0);
+        padding-top: 5%;
+    }
+    #gonews {
+        display: none;
+    }
+    .note .field {
+        height: 35px;
+    }
+    .note .lbutton {
+        height: 35px;
+    }
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid rgb(96, 140, 185);
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    .mobile-dropdown-content {
+        position: relative;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid rgb(96, 140, 185);
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    .mobile {
+        display: block;
+    }
+    .normal {
+        display: none;
+    }
+}

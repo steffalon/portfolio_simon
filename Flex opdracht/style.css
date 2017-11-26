@@ -1,0 +1,57 @@
+html, body {
+  font-family: sans-serif;
+  background-color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.album {
+  background-color: #fff;
+  flex: 0 1 300px;
+  margin: .5em;
+  flex-direction: column;
+  display: flex;
+}
+
+.album img {
+  width: 100%;
+}
+
+.album  article {
+  flex: 1 0 auto;
+  padding: 0 1em;
+}
+
+.album footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1em 1em 0;
+}
+
+.end {
+  background-color: black;
+  color: white;
+  position: sticky;
+}
+
+.album footer img {
+  width: 2em;
+  height: 2em;
+  margin-left: .2em;
+  display: flex;
+}
+
+.album:empty {
+  visibility: hidden;
+}

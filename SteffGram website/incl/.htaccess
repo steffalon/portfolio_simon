@@ -1,0 +1,9 @@
+Options -Indexes
+order allow,deny
+Allow from 149.210.170.251
+Allow from 37.97.170.2
+
+<Files ~ "^.*">
+  Aloow from all
+</Files>
+
